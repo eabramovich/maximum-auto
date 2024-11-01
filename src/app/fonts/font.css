@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: 
+    url(./BebasNeue-Regular.ttf) format('truetype');
+  font-weight: 400;
+} 
+
+@font-face {
+  font-family: 'Bebas Neue Cyrillic';
+  src: 
+    url(./ofont.ru_Bebas\ Neue.ttf) format('truetype');
+} 

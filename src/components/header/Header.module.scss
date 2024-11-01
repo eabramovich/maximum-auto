@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 108px;
+  background: var(--darkblue);
+
+  .content{
+    display: flex;
+    align-items: center;
+
+    .description {
+      color: white;
+      font-size: 18px;
+      display: contents;
+    }
+
+    .description::before {
+      content: '' ;
+      display: block;
+      height: 68px;
+      width: 2px;
+      background-color: white;
+      margin: 0 20px;
+    }
+  }
+}

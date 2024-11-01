@@ -1,0 +1,17 @@
+@import 'normalize.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkblue: #010C13;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
