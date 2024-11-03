@@ -1,0 +1,55 @@
+.carFinder {
+  display: flex;
+  gap: 60px;
+
+  .filter {
+    
+
+    .brands {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      gap: 10px;
+
+      .brandName {
+        padding: 8px 20px;
+        border: 2px solid #010C13;
+        border-radius: 8px;
+        color: #000;
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .brandNameActive {
+        background-color: #A9A9A9;
+      }
+    }
+
+    .resetButton {
+      width: 100%;
+    }
+  }
+
+  .carsList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    .car {
+      width: 440px;
+
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}

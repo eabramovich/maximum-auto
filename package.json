@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
-    "next": "15.0.2",
+    "next": "14.2.15",
     "normalize.css": "^8.0.1",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "punycode": "^2.3.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass-loader": "^16.0.3",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
-    "sass": "^1.80.5"
+    "sass": "^1.80.6"
   }
 }

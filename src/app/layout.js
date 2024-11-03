@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./fonts/font.css";
-import "./globals.css";
+import "./styles/globals.css";
 import Header from "@/components/header/Header";
 import { Inter, Montserrat } from 'next/font/google';
 
@@ -45,8 +45,10 @@ export default function RootLayout({ children }) {
       {/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
       {/* <body className={`${bebasNeueRegular.variable}`}> */}
       <body className={`${montserrat.variable} ${inter.variable}`}>
-        <Header/>
-        {children}
+          <Header />
+          <main className="content">
+            {children}
+          </main>
       </body>
     </html>
   );

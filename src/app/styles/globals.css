@@ -1,0 +1,33 @@
+@import 'normalize.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkblue: #010C13;
+  --lightgray: #F4F7F8;
+  --red: #CA0100;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
+
+.page {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto; 
+}
+
+.content {
+  margin: 0 auto;
+  width: 1482px;
+}
+
+
+@media screen and (max-width: 1550px) {
+  .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
