@@ -5,7 +5,7 @@
   .filter {
     
 
-    .brands {
+    .group {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -14,7 +14,7 @@
       width: 500px;
       gap: 10px;
 
-      .brandName {
+      .param {
         padding: 8px 20px;
         border: 2px solid #010C13;
         border-radius: 8px;
@@ -26,7 +26,7 @@
         cursor: pointer;
       }
 
-      .brandNameActive {
+      .paramActive {
         background-color: #A9A9A9;
       }
     }
@@ -46,9 +46,11 @@
 
     .car {
       width: 440px;
+      margin-bottom: 40px;
 
       .image {
         width: 100%;
+        border-radius: 8px;
       }
     }
   }

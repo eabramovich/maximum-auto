@@ -4,7 +4,7 @@
   height: 108px;
   background: var(--darkblue);
 
-  .content{
+  .content {
     display: flex;
     align-items: center;
 
@@ -15,7 +15,7 @@
     }
 
     .description::before {
-      content: '' ;
+      content: '';
       display: block;
       height: 68px;
       width: 2px;
@@ -23,4 +23,20 @@
       margin: 0 20px;
     }
   }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    .content {
+      .description {
+        font-size: 10px;
+        line-height: 150%;
+      }
+
+      .logo {
+        width: 111px;
+      }
+    }
+  }
+
 }

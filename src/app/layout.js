@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./fonts/font.css";
 import "./styles/globals.css";
-import Header from "@/components/header/Header";
+import Header from "@/components/Header/Header";
 import { Inter, Montserrat } from 'next/font/google';
 
 export const inter = Inter({

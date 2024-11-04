@@ -11,6 +11,7 @@ const Header = () => {
           <Image
             src={logo}
             alt="Логотип"
+            className={styles.logo}
           />
         </Link>
         <p className={styles.description}>Официальный дилер Максимум</p>

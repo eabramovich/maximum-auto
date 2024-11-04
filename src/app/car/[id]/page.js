@@ -1,7 +1,11 @@
 'use client'
 import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import Slider from "@/components/Slider/Slider";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Pagination, Navigation } from 'swiper/modules';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 import styles from './index.module.scss';
 
 const carPage = ({ params }) => {
@@ -16,7 +20,8 @@ const carPage = ({ params }) => {
     console.log(cars);
     console.log(currentCar);
     console.log(currentCar.photos.imgs);
-    setCar(currentCar);
+    console.log({ ...currentCar, price: String(currentCar.price).replace(/\B(?=(\d{3})+(?!\d))/g, " ") });
+    setCar({ ...currentCar, price: String(currentCar.price).replace(/\B(?=(\d{3})+(?!\d))/g, " ") });
     setSlides(currentCar.photos.imgs);
   }, [])
 
@@ -32,20 +37,28 @@ const carPage = ({ params }) => {
           </div>
           <div className={styles.param}>
           </div>
+          <div className={styles.characteristics}>
+            <h2>Характеристики</h2>
+            <div className={styles.content}>
+              <ul className={styles.list}>
+                <li className={`${styles.item} ${styles.year}`}>
+                  {car.modelYear}
+                </li>
+                <li className={`${styles.item} ${styles.fuelType}`}>
+                  { car.EngineSize ?  car.EngineSize + ' л / ' : "" }
+                  { car.Power ?  car.Power + ' л.с / ' : "" }  
+                  { car.FuelType ?  car.FuelType : ""}
+                </li>
+                <li className={`${styles.item} ${styles.variator}`}>
+                  КП - { car.transmissionRu}
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-        >
-          {slides.map((slide) => (
-            <SwiperSlide key={slide._id}>
-              <img src={slide.urlThumb} alt={car.modelName} />
-              <h2>{slide.title}</h2>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className={styles.slider}>
+          <Slider slides={slides} title={car.modelName} />
+        </div>
 
       </div>
     </div>
