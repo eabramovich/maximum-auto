@@ -13,9 +13,8 @@ export default async function Home() {
           {
             carBrands.map((brand =>
             (
-              <li>
+              <li key={brand.name}>
                 <Link
-                  key={brand.id}
                   href={`/cars/${brand.name}`}
                 >
                   {brand.name}

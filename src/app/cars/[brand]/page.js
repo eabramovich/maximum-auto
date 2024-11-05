@@ -11,8 +11,6 @@ export default async function BrandCars({ params }) {
     const cars = await res.json();
     const engineSizes = [...new Set(cars.map(car => car.EngineSize))];
     const complectations = [... new Set(cars.map(car => car.Complectation))];
-    console.log(cars);
-    console.log(engineSizes);
 
     return (
         <div>
