@@ -1,7 +1,7 @@
 import styles from './index.module.css';
-import CarCard from '@/components/CarCard/CarCard';
-import Header from '@/components/Header/Header';
-import Banner from '@/components/Banner/Banner';
+import CarCard from '../../../../components/CarCard/CarCard';
+import Header from '../../../../components/Header/Header';
+import Banner from '../../../../components/Banner/Banner';
 
 
 const car = async ({ params }) => {
