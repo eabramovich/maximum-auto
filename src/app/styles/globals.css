@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --darkblue: #010C13;
+  --gray: #9AA7AD;
   --lightgray: #F4F7F8;
   --red: #CA0100;
 }
@@ -15,20 +16,66 @@ body {
 .page {
   max-width: 1920px;
   min-width: 320px;
-  margin: auto; 
+  margin: auto;
+}
+
+/* .hide-on-mobile {
+  display: block;
+} */
+
+@media (max-width: 1240px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 .content {
   margin: 0 auto;
   width: 1482px;
-  padding: 80px 0;
+  padding: 90px 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--lightgray);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--darkblue);
+  /* Измените цвет точки */
+  width: 12px;
+  /* Установите желаемую ширину */
+  height: 12px;
+  /* Установите желаемую высоту */
+  opacity: 1;
+  /* Убедитесь, что точка видима */
+  transition: all 0.3s ease;
+  /* Добавьте анимацию перехода */
 }
 
 
 @media screen and (max-width: 1550px) {
   .content {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .content {
     box-sizing: border-box;
     width: 100%;
-    padding: 80px 20px;
+    padding: 30px 20px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: none;
   }
 }

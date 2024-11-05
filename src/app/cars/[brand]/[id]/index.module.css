@@ -1,4 +1,37 @@
-.vin {
-  color: #9AA7AD;
+.content {
+  margin: 0 auto;
+  width: 1482px;
+  padding: 90px 0;
+
+  .vin {
+    color: #9AA7AD;
+    margin: 0;
+  }
+
+  .title {
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
 }
 
+
+@media screen and (max-width: 1550px) {
+  .content {
+    width: 1200px;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 20px;
+
+    .title {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+  }
+  
+}

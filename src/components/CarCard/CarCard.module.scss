@@ -6,20 +6,61 @@
   .carInfo {
     width: 626px;
 
-    .param {
-      height: 82px;
-      box-sizing: border-box;
-      background-color: var(--lightgray);
-      border-radius: 12px;
-      margin-bottom: 20px;
-      padding-left: 40px;
-      padding-top: 20px;
+    .params {
+      margin-bottom: 47px;
 
-      .price {
-        color: var(--red);
-        font-weight: bolder;
-        font-size: 38px;
+      .item {
+        height: 82px;
+        box-sizing: border-box;
+        background-color: var(--lightgray);
+        border-radius: 12px;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .price {
+          color: var(--red);
+          font-weight: bolder;
+          font-size: 38px;
+        }
+
+        .value {
+          font-size: 28px;
+          font-weight: 500;
+        }
       }
+    }
+
+    .characteristics {
+      padding-top: 12px;
+
+
+      .title {
+        font-size: 40px;
+        color: var(--darkblue);
+        margin: 0 0 37px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 60px 0 60px 60px;
+        background-color: var(--lightgray);
+        border-radius: 16px;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          font-size: 28px;
+          font-weight: 500;
+        }
+      }
+
     }
   }
 
@@ -28,14 +69,84 @@
   }
 }
 
-@media screen and (max-width: 780px) {
-  .car { 
+@media screen and (max-width: 1550px) {
+  .car {
+    gap: 30px;
+    padding-top: 40px;
+
+    .carInfo {
+      width: 626px;
+
+      .params {
+        margin-bottom: 47px;
+
+        .item {
+          height: 50px;
+          margin-bottom: 10px;
+          padding-left: 30px;
+          gap: 15px;
+
+          .price {
+            font-size: 25px;
+          }
+
+          .value {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .characteristics {
+        padding-top: 12px;
+
+        .title {
+          font-size: 25px;
+          color: var(--darkblue);
+          margin: 0 0 20px;
+        }
+
+        .content {
+          padding: 20px 0 20px 20px;
+          border-radius: 16px;
+          gap: 20px;
+
+          .item {
+            gap: 20px;
+            font-size: 15px;
+            font-weight: 500;
+
+            .icon {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .slider {
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .car {
+    gap: 0px;
     flex-flow: column-reverse;
+    padding-top: 20px;
+
     .carInfo {
       width: 100%;
+
+      .params {
+        margin-bottom: 20px;
+      }
     }
+
     .slider {
-      width: 100%; 
+      width: 100%;
     }
   }
 }

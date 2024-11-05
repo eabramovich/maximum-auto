@@ -1,10 +1,31 @@
 .content {
-  padding-top: 100px;
+  margin: 0 auto;
+  width: 1482px;
+  padding: 90px 0;
 
   .title {
     font-size: 40px;
+    margin: 0;
+
     .brand {
       text-transform: capitalize;
     }
+  }
+}
+
+
+@media screen and (max-width: 1550px) {
+  .content {
+    width: 1200px;
+    padding: 50px 0;
+
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 20px;
   }
 }

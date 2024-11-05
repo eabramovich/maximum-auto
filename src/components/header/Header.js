@@ -6,7 +6,7 @@ import styles from './Header.module.scss'
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={`content ${styles.content}`}>
+      <div className={styles.content}>
         <Link href="/">
           <Image
             src={logo}

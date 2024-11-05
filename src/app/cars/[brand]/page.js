@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import styles from "./index.module.scss";
+import Header from '@/components/Header/Header';
 import CarsList from '@/components/CarsList/CarsList';
 
 //export default async function BrandCars({ params }) {
@@ -15,13 +16,17 @@ export default async function BrandCars({ params }) {
 
     return (
         <div>
-            <h1 className={styles.title}>Автомобили <span className={styles.brand}>{brand}</span> в СПб</h1>
-            <CarsList 
-                carsInit={cars} 
-                brandInit={brand} 
-                engineSizesInit={engineSizes} 
-                complectationsInit={complectations}
-            />
+            <Header />
+            <main className={styles.content}>
+                <h1 className={styles.title}>Автомобили <span className={styles.brand}>{brand}</span> в СПб</h1>
+                <CarsList
+                    carsInit={cars}
+                    brandInit={brand}
+                    engineSizesInit={engineSizes}
+                    complectationsInit={complectations}
+                />
+            </main>
+
         </div>
     );
 }

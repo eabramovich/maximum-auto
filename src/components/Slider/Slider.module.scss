@@ -1,8 +1,36 @@
 .slide {
   width: 100%;
+  margin-bottom: 20px;
 
   .image {
     width: 100%;
     border-radius: 16px;
+    height: 719px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .slide {
+    .image {
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .slide {
+    .image {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slide {
+    margin-bottom: 0px;
+    .image {
+      height: auto;
+    }
   }
 }

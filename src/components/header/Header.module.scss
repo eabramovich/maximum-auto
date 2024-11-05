@@ -7,6 +7,9 @@
   .content {
     display: flex;
     align-items: center;
+    width: 1482px;
+    margin: 0 auto;
+
 
     .description {
       color: white;
@@ -25,9 +28,18 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1550px) {
   .header {
     .content {
+      width: 1200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    .content {
+      padding: 0 20px;
       .description {
         font-size: 10px;
         line-height: 150%;
