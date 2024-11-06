@@ -12,7 +12,6 @@ import transmissionIcon from "../../../public/transmission.svg";
 const CarCard = ({ car }) => {
   const carPrice = String(car.price).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   const slideImgs = car.photos.imgs;
-  console.log(slideImgs);
   useEffect(() => {
 
   })

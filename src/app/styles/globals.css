@@ -19,10 +19,6 @@ body {
   margin: auto;
 }
 
-/* .hide-on-mobile {
-  display: block;
-} */
-
 @media (max-width: 1240px) {
   .hide-on-mobile {
     display: none;
@@ -42,15 +38,10 @@ body {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--darkblue);
-  /* Измените цвет точки */
   width: 12px;
-  /* Установите желаемую ширину */
   height: 12px;
-  /* Установите желаемую высоту */
   opacity: 1;
-  /* Убедитесь, что точка видима */
   transition: all 0.3s ease;
-  /* Добавьте анимацию перехода */
 }
 
 
