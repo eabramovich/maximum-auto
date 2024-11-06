@@ -1,7 +1,6 @@
-import { notFound } from 'next/navigation';
 import styles from "./index.module.scss";
 import Header from '@/components/Header/Header';
-import CarsList from '@/components/CarsList/CarsList';
+import CarsList from "@/components/CarsList/CarsList";
 
 export default async function BrandCars({ params }) {
     const { brand } = await params;

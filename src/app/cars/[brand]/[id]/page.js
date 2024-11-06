@@ -18,7 +18,7 @@ const car = async ({ params }) => {
         <p className={styles.vin}>VIN {car.vin}</p>
         <CarCard car={car} />
       </main>
-      <Banner />
+      <Banner imgTitle={car.brandName} />
     </div>
   )
 }

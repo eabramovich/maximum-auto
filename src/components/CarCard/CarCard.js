@@ -24,7 +24,7 @@ const CarCard = ({ car }) => {
             <span className={styles.price}>{carPrice} &#8381;</span>
           </div>
           <div className={styles.item}>
-            <Image src={guaranteeSign} />
+            <Image src={guaranteeSign} alt="Значок гарантии"/>
             <p className={styles.value}>Гарантия юр. чистоты</p>
           </div>
           </div>
@@ -32,17 +32,17 @@ const CarCard = ({ car }) => {
           <h2 className={styles.title}>Характеристики</h2>
           <div className={styles.content}>
             <div className={`${styles.item} ${styles.year}`}>
-              <Image src={modelYearIcon} className={styles.icon}/>
+              <Image src={modelYearIcon} className={styles.icon} alt="Год выпуска"/>
               {car.modelYear}
             </div>
             <div className={`${styles.item} ${styles.fuelType}`}>
-              <Image src={fuelIcon} className={styles.icon} />
+              <Image src={fuelIcon} className={styles.icon} alt="Топливо" />
               {car.EngineSize ? car.EngineSize + ' л / ' : ""}
               {car.Power ? car.Power + ' л.с / ' : ""}
               {car.FuelType ? car.FuelType : ""}
             </div>
             <div className={`${styles.item} ${styles.variator}`}>
-              <Image src={transmissionIcon} className={styles.icon} />
+              <Image src={transmissionIcon} className={styles.icon} alt="Коробка передач" />
               КП - {car.transmissionRu}
             </div>
           </div>

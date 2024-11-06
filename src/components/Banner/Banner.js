@@ -3,7 +3,7 @@ import LinkButton from "../UI/LinkButton/LinkButton";
 import carImg from "../../../public/car.png"
 import styles from "./Banner.module.scss";
 
-const Banner = () => {
+const Banner = ({ imgTitle}) => {
   return (
     <div className={styles.banner}>
       <div className={styles.advertOffer}>
@@ -17,7 +17,7 @@ const Banner = () => {
 
         </div>
       </div>
-      <Image src={carImg} className={styles.image}/>
+      <Image src={carImg} className={styles.image} alt={imgTitle} />
     </div>
   )
 }

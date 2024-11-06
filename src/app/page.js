@@ -1,4 +1,3 @@
-import { redirect } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header/Header";
 import { carBrands } from "@/utils/constants";
@@ -14,11 +13,11 @@ export default async function Home() {
             carBrands.map((brand =>
             (
               <li key={brand.name}>
-                <Link
+                <a
                   href={`/cars/${brand.name}`}
                 >
                   {brand.name}
-                </Link>
+                </a>
               </li>
             )
             ))}
